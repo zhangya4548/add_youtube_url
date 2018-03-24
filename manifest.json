@@ -1,0 +1,16 @@
+{
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "name":"添加youtube地址到下载池",
+  "description":",谷歌插件",
+  "permissions":[
+      "http://*.3ddysj.com/"
+  ],
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "html/popup.html"
+  },
+  "icons": {
+    "128": "images/icon.png"
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/popup.css">
+    <title>添加youtube地址到下载池</title>
+</head>
+<body >
+    <div class="panel" style="height: 200px" v-cloak>
+        <div class="wrap">
+
+            <!--<button @click="sub">添加</button>-->
+        </div>
+        <div class="wrap">
+            <input type="text" placeholder="请输入添加的名称" v-model="input_name"/>
+            <input type="text" placeholder="请输入添加的地址......" v-model="input_url"/>
+            <button @click="sub">添加</button>
+        </div>
+        <p  class="wrap_b" v-show="err_status">{{ input_err }}</p>
+        <p  class="wrap_c" >
+            注意:<br/>
+            添加名称确保长度在5-30个字以内<br/>
+            添加url必须是youtube的地址<br/>
+
+        </p>
+        <p class="wrap_d">问题反馈: 1641844790@qq.com <a class="button btn_style3" href="https://coding.net/u/zhangya4548/p/vip_sp_jiexi/git" target="_blank">更新</a></p>
+    </div>
+    <!-- 先引入 Vue -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/vue.min.js"></script>
+    <script src="../js/matches.js"></script>
+
+</body>
+</html>
