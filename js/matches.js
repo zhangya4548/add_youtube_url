@@ -44,7 +44,7 @@ var V = new Vue({
 
             var _vue = this
 
-            $.post("http://zgqdl.3ddysj.com/index.php", { "name": this.input_name,"url": this.input_url },
+            $.post("http://xcc.3ddysj.com/index.php", { "name": this.input_name,"url": this.input_url },
                 function(data){
                     if(data.msg === '添加完成'){
                         _vue.input_name = ''
